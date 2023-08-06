@@ -1,0 +1,434 @@
+* {
+  scroll-behavior: smooth;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sidebar {
+  width: 200px;
+  min-height: 100vh;
+  background-image: linear-gradient(216.19deg, #2D4059 5.76%, #0A142F 67.34%);
+  color: var(--text-color);
+  padding: 10px 20px;
+}
+
+.sidebar h1 {
+  margin-top: 0px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0px;
+}
+
+.sidebar li {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.sidebar li:hover {
+  background-color: #d2e2fc;
+}
+
+.sidebar a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* Top Navbar */
+.top-navbar {
+  background-color: #4e4e4e;
+  color: var(--text-color);
+  padding: 10px;
+  text-align: right;
+  width: 100%;
+}
+
+.dashboard {
+  display: flex;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  width: 100%;
+  color: #F6F6F5;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-width: 1325px;
+  max-width: 100%;
+}
+
+.content-body {
+  padding: 50px;
+}
+/* Add this CSS to your existing stylesheet or create a new one */
+.details-table {
+  margin-top: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-table h3 {
+  margin-top: 0;
+}
+
+.details-table table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.details-table th,
+.details-table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.details-table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.details-table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.details-table .close-btn {
+  margin-top: 10px;
+  background: var(--red-bg);
+  display: block;
+  float: right;
+  margin-right: 50px;
+  font-size: 14px;
+  display: inline;
+  position: relative;
+  overflow: hidden;
+  color: #f6f6f6 !important;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0;
+  margin-top: 0.8rem;
+}
+
+
+/* styles.css */
+
+.breadcrumb {
+  margin: 10px 0;
+  color: #F6F6F5;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.box {
+  color: #f6f6f5;
+  flex-basis: 40%;
+  background-color: #9d9fe8;
+  padding: 20px;
+  border-radius: 5px 50px 5px 50px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1), 0 2px 4px rgba(255, 255, 255, 0.06);
+  transition: box-shadow 0.2s ease;
+  transition: transform 0.2s ease;
+}
+
+.box:hover {
+  box-shadow: 0 8px 12px rgba(255, 255, 255, 0.1), 0 4px 8px rgba(255, 255, 255, 0.06);
+  transform: translateY(-5px);
+}
+
+.box h2 {
+  margin-bottom: 10px;
+}
+
+.box p {
+  margin-bottom: 15px;
+}
+
+.box button {
+  padding: 10px 15px;
+  background-color: var(--bg-color);
+  color: #f6f6f5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.box button:hover {
+  background-color: var(--text-color);
+  transform: translateY(-5px);
+}
+
+/* Big Box with Admin Details */
+.big-box {
+  color: #f6f6f5;
+  background-color: #9d9fe8;
+  padding: 20px;
+  border-radius: 100px 5px 100px 5px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1), 0 2px 4px rgba(255, 255, 255, 0.06);
+  transition: box-shadow 0.3s ease;
+  margin-top: 50px;
+}
+
+.big-box:hover {
+  box-shadow: 0 8px 12px rgba(255, 255, 255, 0.1), 0 4px 8px rgba(255, 255, 255, 0.06);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  margin: 20px 0px;
+}
+
+.progress {
+  height: 100%;
+  background-color: var(--text-color);
+  /* Progress bar color */
+  transition: width 0.3s ease;
+  /* Transition for smooth animation */
+}
+
+.progress-number {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 12px;
+  background-color: var(--bg-color);
+  padding: 10px;
+}
+
+/* styles.css */
+
+.single-ad-box {
+  display: flex;
+  align-items: center;
+  background-color: var(--text-color);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #363636;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.single-ad-box:hover {
+  background-image: var(--bg-color);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.06);
+  transform: translateY(-5px);
+  color:  #ffc234 ;
+}
+
+.single-ad-box .image {
+  flex-basis: 5%;
+}
+
+.single-ad-box .image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.single-ad-box .details {
+  flex-basis: 80%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.single-ad-box .details h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.single-ad-box .details p {
+  margin: 0;
+}
+
+.actions {
+  flex-basis: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.actions button {
+  margin-bottom: 5px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+
+
+.actions .approve {
+  background-color: #EAF8F0;
+  color: #9D9FE8;
+  border-radius: 50px;
+}
+
+.actions .approve:hover {
+  background-color: #9D9FE8;
+  color: #EAF8F0;
+  border-radius: 40px;
+}
+
+.ads {
+  background-color: #9D9FE8;
+  padding: 50px;
+  border-radius: 5px 350px 5px 350px;
+}
+#single-ads{
+  height: 300px;
+  font-size: 22px;
+  border: 34px solid #9D9FE8;
+  background-color: #252a6a;
+  text-transform: capitalize;
+}
+/* styles.css */
+
+.ad-detail-page {
+  padding: 20px;
+}
+
+.ad-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f6f6f6;
+}
+
+.ad-detail .details {
+  flex-basis: 50%;
+  margin-left: 20px;
+}
+.ad-detail span{
+  color: #9D9FE8;
+}
+.ad-detail .details h3 {
+  margin-bottom: 10px;
+}
+
+.ad-detail .details p {
+  margin: 5px 0;
+}
+
+
+/* styles.css */
+/* styles.css */
+
+.login-page {
+  max-width: 400px;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f6f6f5;
+  color: var(--bg-color);
+}
+
+.login-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--bg-color);
+}
+
+.login-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-page .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  gap: 5px;
+}
+
+.login-page .form-group label {
+  font-weight: bold;
+}
+
+.login-page .form-group input {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-page button {
+  padding: 10px;
+  background-color: var(--bg-color);
+  color: #f6f6f5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-page button:hover {
+  background-color: #444;
+}
+
+
+/* for loading */@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* When you change the amount of characters in the h1, you have to change 
+the with: 14ch and  steps(14, end), if there is 14 characters, put 14, 
+if there is 20 put 20 */
+.animation {
+  font: bold 200% Consolas, Monaco, monospace;
+  border-right: .1em solid #f6f6f5;
+  width: 13.20ch;
+  margin: 8em auto;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #f6f6f5;
+  -webkit-animation: typing .75s steps(13, end),
+    blink-caret .5s step-end infinite alternate;
+}
+.navbar-logo {
+  width: 130px;
+  height: auto;
+  margin-right: 10px;
+}
